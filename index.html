@@ -102,6 +102,107 @@
 
     // Start your code here
     // You may move this JS to another file if you wish
+    for (let i = 0; i < errorBtns.length; i++) {
+      if (errorBtns[i].innerHTML == "Console Log") {
+        errorBtns[i].onclick = function () {
+          console.log("Console log Demo");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Error") {
+        errorBtns[i].onclick = function () {
+          console.error("Console error Demo");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Count") {
+        errorBtns[i].onclick = function () {
+          console.count("Console count has been pressed this many times");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Warn") {
+        errorBtns[i].onclick = function () {
+          console.warn("Console warn demo");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Assert") {
+        errorBtns[i].onclick = function () {
+          console.assert(1 == 2, "Console assert demo (1 == 2)");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Clear") {
+        errorBtns[i].onclick = function () {
+          console.clear();
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Dir") {
+        errorBtns[i].onclick = function () {
+          console.dir(errorBtns[i]);
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Dir") {
+        errorBtns[i].onclick = function () {
+          console.dir(errorBtns[i]);
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console dirxml") {
+        errorBtns[i].onclick = function () {
+          console.dirxml(errorBtns[i]);
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Group Start") {
+        errorBtns[i].onclick = function () {
+          console.group();
+          console.log("Console demo group started");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Group End") {
+        errorBtns[i].onclick = function () {
+          console.groupEnd();
+          console.log("Console demo group ended");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Table") {
+        errorBtns[i].onclick = function () {
+          console.table(["data", "displayed", "as", "a", "table"]);
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Start Timer") {
+        errorBtns[i].onclick = function () {
+          console.time("Demo timer");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "End Timer") {
+        errorBtns[i].onclick = function () {
+          console.timeEnd("Demo timer");
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Console Trace") {
+        errorBtns[i].onclick = function () {
+          console.trace(errorBtns);
+        }
+      }
+
+      if (errorBtns[i].innerHTML == "Trigger a Global Error") {
+        errorBtns[i].onclick = function () {
+          console.log("Triggering error...");
+          let error = whoopsie;
+        }
+      }
+    }
+
   </script>
 </body>
 
